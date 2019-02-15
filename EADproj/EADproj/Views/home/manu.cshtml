@@ -1,0 +1,147 @@
+﻿
+<!-- banner -->
+<div class="banner-slider">
+    <!-- banner Slider starts Here -->
+    <script src="js/responsiveslides.min.js"></script>
+    <script>
+        // You can also use "$(window).load(function() {"
+        $(function () {
+            // Slideshow 4
+            $("#slider3").responsiveSlides({
+                auto: true,
+                pager: true,
+                nav: false,
+                speed: 500,
+                namespace: "callbacks",
+                before: function () {
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                    $('.events').append("<li>after event fired.</li>");
+                }
+            });
+
+        });
+    </script>
+    <!--//End-slider-script -->
+    <div id="top" class="callbacks_container">
+        <ul class="rslides" id="slider3">
+            <li>
+                <div class="banner"> </div>
+            </li>
+            <li>
+                <div class="banner-img"> </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- //banner -->
+<!-- how -->
+<div class="how">
+    <!-- container -->
+    <div class="container">
+        <div class="how-top-grids">
+            <div class="col-md-7 how-left">
+                <h3>History of the club </h3>
+
+                <!-- pop-up-box -->
+                <script type="text/javascript" src="js/modernizr.custom.min.js"></script>
+                <link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+                <script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+                <!--//pop-up-box -->
+                <div id="small-dialog" class="mfp-hide">
+
+                </div>
+
+
+
+                <p>
+                    Manchester United Football Club is a professional football club based in Old Trafford,
+                    Greater Manchester, England, that competes in the Premier League, the top flight of English football. Nicknamed "the Red Devils", the club was founded as Newton Heath LYR Football Club in 1878, changed its name to Manchester United in 1902 and moved to its current stadium, Old Trafford, in 1910. Manchester United have won a record 20 League Titles, a joint-record 12 FA Cups, four League Cups and a record 21 FA Community Shields. The club has also won three European Cups, one UEFA Cup Winners' Cup, one UEFA Super Cup, one Intercontinental Cup and one FIFA Club World Cup. In 1998–99, the club became the first in the history of English football to achieve the treble of the Premier League, the FA Cup and the UEFA Champions League. The 1958 Munich air disaster claimed the lives of eight players. In 1968, under the management of Matt Busby, Manchester United became the first English football club to win the European Cup. Alex Ferguson won 38 trophies, including 13 Premier League titles, 5 FA Cups and 2 UEFA Champions Leagues, between 1986 and 2013, when he announced his retirement.
+                    José Mourinho is the club's current manager, having been appointed on 27 May 2016.
+
+                </p>
+            </div>
+            <div class="col-md-5 how-right">
+                <h3>Club details</h3>
+                <div class="tournament">
+                    <div class="how-right-left">
+
+                    </div>
+                    <div class="how-right-right">
+                        <a href="http://www.manutd.com">Clubs official website</a>
+                        <p>
+                            Home Stadium: Old Trafford <br>
+
+                            Club Manager: jose Mourinho
+                        </p>
+                        <div class="more">
+                            <a href="single.html"></a>
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="tournament t-middle">
+                    <div class="how-right-left">
+
+                    </div>
+                    <div class="how-right-right">
+                        <h4></h4>
+                        <p>
+                        </p>
+                        <div class="more">
+                            <a href="single.html"></a>
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="tournament t-middle">
+                    <div class="how-right-left">
+
+                    </div>
+                    <div class="how-right-right">
+
+                        <p>
+                        </p>
+                        <div class="more">
+                            <a href="single.html"></a>
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <!-- //container -->
+</div>
+<!-- //how -->
+<!-- news -->
+<div class="news">
+</div>
+<!-- //news -->
+<!-- banner-bottom -->
+<div class="banner-bottom">
+    <!-- container -->
+
+</div>
+<!-- //banner-bottom -->
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        /*
+        var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 1200,
+            easingType: 'linear'
+        };
+        */
+
+        $().UItoTop({ easingType: 'easeOutQuart' });
+
+    });
+</script>
+<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- content-Get-in-touch -->
+	</

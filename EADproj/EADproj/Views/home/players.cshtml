@@ -1,0 +1,108 @@
+﻿
+
+        <style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+
+    <!-- //header -->
+    
+    <table>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Goals</th>
+        <th>Assists</th>
+        <th>Nationality</th>
+    </tr>
+        @foreach (var k in Model) { 
+    <tr>
+        <td>@k.pname</td>
+        <td>@k.age</td>
+        <td>@k.goals</td>
+        <td>@k.assists</td>
+        <td>@k.nationality</td>
+        @if(Session["uname"] != null && (int)Session["type"] == 2) {
+        <td><a href="~/Home/editPlayer/@k.pid">Edit</a></td>
+        <td><a href="~/Home/deletePlayer?pid=@k.pid&cid=@k.cid">Delete</a></td>
+        }
+    </tr>
+       }
+</table>
+@if (Session["uname"] != null && (int)Session["type"] == 2)
+{
+   <form action="~/Home/addPlayer">
+    <input type="submit" value="Add Player" />
+</form>
+}
+
+<span>@TempData["err"]</span>
+</body>
+
+
+    <!-- //container -->
+    <!-- //contact -->
+    <!-- footer -->
+    <div class="footer">
+        <!-- container -->
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-grids">
+                    <div class="col-md-3 f-address">
+
+                    </div>
+                    <div class="col-md-6 f-address f-contact">
+                        <h5>--> Playing football with your feet is one thing,but playing football with your heart is another...</h5>
+
+                    </div>
+                    <div class="col-md-3 footer-logo">
+
+                        <div class="footer-left">
+
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="copyright">
+
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+        </div>
+        <!-- //container -->
+    </div>
+    <!-- //footer -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            /*
+            var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear'
+            };
+            */
+
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+        });
+    </script>
+    <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    <!-- content-Get-in-touch -->
+</body>
+</html>

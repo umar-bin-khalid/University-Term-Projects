@@ -1,0 +1,232 @@
+﻿
+			<!-- banner -->
+<div class="banner-slider">
+    <!-- banner Slider starts Here --> 
+    <script src="~/Scripts/js/responsiveslides.min.js"></script>
+        
+    <script>
+        // You can also use "$(window).load(function() {"
+        $(function () {
+            // Slideshow 4
+            $("#slider3").responsiveSlides({
+                auto: true,
+                pager: true,
+                nav: false,
+                speed: 500,
+                namespace: "callbacks",
+                before: function () {
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                    $('.events').append("<li>after event fired.</li>");
+                }
+            });
+
+        });
+    </script>
+    <!--//End-slider-script -->
+    <div id="top" class="callbacks_container">
+        <ul class="rslides" id="slider3">
+            <li>
+                <div class="banner"> </div>
+            </li>
+            <li>
+                <div class="banner-img"> </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- //banner -->
+
+		<!-- how -->
+		<div class="how">
+			<!-- container -->
+			<div class="container">
+				<div class="how-top-grids">
+					<div class="col-md-7 how-left">
+						<h3>The barclays premier league history</h3>
+                        <img src="~/Images/images/4.jpg" alt="" />
+						<a class="play-icon popup-with-zoom-anim" href="#small-dialog">
+							<span> </span>
+						</a>
+						<!-- pop-up-box -->
+						<script type="text/javascript" src="Scripts/js/modernizr.custom.min.js"></script>    
+						<link href="Content/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+                        <script src="~/Scripts/js/jquery.magnific-popup.js" type="text/javascript"></script>
+						<!--//pop-up-box -->
+				
+						 <script>
+							$(document).ready(function() {
+							$('.popup-with-zoom-anim').magnificPopup({
+								type: 'inline',
+								fixedContentPos: false,
+								fixedBgPos: true,
+								overflowY: 'auto',
+								closeBtnInside: true,
+								preloader: false,
+								midClick: true,
+								removalDelay: 300,
+								mainClass: 'my-mfp-zoom-in'
+							});
+																							
+							});
+						</script>
+                        <h4>
+                            About the History of the Barclays Premier league.
+                        </h4>
+                        <p>
+                            The Premier League is a corporation in which the 20 member clubs act as shareholders.
+                            Seasons run from August to May.
+                            Teams play 38 matches each (playing each team in the league twice, home and away), totalling 380 matches in the season.
+                            Most games are played on Saturday and Sunday afternoons; others during weekday evenings.
+                            It is colloquially known as the Premiership and outside the UK it is commonly referred to as the English Premier League (EPL).
+                        </p>
+					</div>
+					<div class="col-md-5 how-right">
+						<h3>ENGLISH LEAGUE</h3>
+						<div class="tournament">
+							<div class="how-right-left">
+                                <img src="~/Images/images/5.png" alt="" />
+							</div>
+							<div class="how-right-right">
+								<h4>Shoes</h4>
+								<P>
+                                    We are offering clients a choice of sporting goods at our branches. 
+                                    Here clients get the opportunity to seek expert advice and try out products before they purchase
+								</p>
+								<div class="more">
+									<a href="single.cshtml">MORE</a>
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="tournament t-middle">
+							<div class="how-right-left">
+                                <img src="~/Images/images/6.jpg" alt="" />
+							</div>
+							<div class="how-right-right">
+								<h4>Aug 12</h4>
+								<P>
+								</p>
+								<div class="more">
+									<a href="/home/index"></a> 
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="tournament t-middle">
+							<div class="how-right-left">
+                                <img src="~/Images/images/7.jpg" alt="" />
+							</div>
+							<div class="how-right-right">
+								<h4>Balls</h4>
+								<p></p>
+								<div class="more">
+									<a href="/home/index"></a>
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!-- //container -->
+		</div>
+		<!-- //how -->
+		<!-- news -->
+		<div class="news">
+			<!-- container -->
+			<div class="container">
+				<div class="news-info">
+					<h3>New Arrivals</h3>
+				</div>
+				<div class="news-grids">
+					<div class="col-md-4 news-grid">
+						<div class="news-grid-left news-grid-left-img">
+							<p>11 / 09</p>
+						</div>
+						<div class="news-grid-left-info">
+							<h5></h5>
+							<p>Keep On checking</p>
+						</div>
+					</div>
+					<div class="col-md-4 news-grid">
+						<div class="news-grid-left news-grid-middle">
+							<p>11 / 09</p>
+						</div>
+						<div class="news-grid-left-info">
+							<h5></h5>
+							<p></p>
+						</div>
+					</div>
+					<div class="col-md-4 news-grid">
+						<div class="news-grid-left news-grid-right">
+							<p>11 / 09</p>
+						</div>
+						<div class="news-grid-left-info">
+							<h5></h5>
+							<p></p>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!-- //container -->
+		</div>
+		<!-- //news -->
+		<!-- banner-bottom -->
+		<div class="banner-bottom">
+			<!-- container -->
+			<div class="container">
+				<div class="banner-bottom-info">
+					<h3>Expert Opinion</h3>
+				</div>
+				<div class="banner-bottom-grids">
+					<div class="col-md-4 banner-bottom-grid">
+						<span>Gallery<label></label></span>
+                        <img src="Images/images/g7.jpg" alt="" />
+						<h4>FootBallers</h4>	
+						<p>
+						</p>
+					</div>
+					<div class="col-md-4 banner-bottom-grid">
+						<span><label></label></span>
+                        <img src="Images/images/10.jpg" alt="" />
+						<h4>Rugby Players Kits</h4>	
+						<p>
+						</p>
+					</div>
+					<div class="col-md-4 banner-bottom-grid">
+						<span><label></label></span>
+                        <img src="Images/images/g5.jpg" alt="" />
+						<h4>Football kits (shoes,football etc)</h4>	
+						<p>
+						</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!-- //container -->
+		</div>
+		<!-- //banner-bottom -->
+		
+		<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+									<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!-- content-Get-in-touch -->
+	</body>
+</html>

@@ -1,0 +1,24 @@
+﻿
+
+<h2>Editing Players</h2>
+<form action="~/Home/editPlayerFunct/@Model.pid" method="post" id="addplayer_form">
+
+
+    Name of the footballer:<br>
+    <input type="text" name="pname" value="@Model.pname" placeholder="Type particulars">
+    <br>
+    Age of the footballer:<br>
+    <input type="number" name="age" value="@Model.age" placeholder="Type particulars">
+    <br>
+    Goals of the footballer:<br>
+    <input type="number" name="goals" value="@Model.goals" placeholder="Type particulars">
+    <br>
+    Assists of the footballer:<br>
+    <input type="number" name="assists" value="@Model.assists" placeholder="Type particulars">
+    <br>
+    Nationality of the footballer:<br>
+    <input type="text" name="nationality" value="@Model.nationality" placeholder="Type particulars">
+    <br><br>
+   
+    <input type="submit" value="Submit">
+</form>

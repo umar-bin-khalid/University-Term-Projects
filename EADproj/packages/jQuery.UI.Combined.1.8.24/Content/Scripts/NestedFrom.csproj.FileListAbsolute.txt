@@ -1,0 +1,3 @@
+C:\Users\WasimAhmad\documents\visual studio 2013\Projects\LINQ_Examples\NestedSelect\bin\Debug\NestedSelect.exe.config
+C:\Users\WasimAhmad\documents\visual studio 2013\Projects\LINQ_Examples\NestedSelect\obj\Debug\NestedSelect.exe
+C:\Users\WasimAhmad\documents\visual studio 2013\Projects\LINQ_Examples\NestedSelect\obj\Debug\NestedSelect.pdb
